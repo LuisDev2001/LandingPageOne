@@ -17,7 +17,7 @@ header {
   width: 100%;
   min-height: 60vh;
   background-image: url('../img/heroImage.jpg');
-  background-position: 0 100%;
+  background-position: 0 85%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -45,11 +45,13 @@ header .hero .logo {
 header .hero p {
   font-size: 2.3em;
   color: #ffffff;
+  text-align: center;
 }
 header .hero h2 {
   font-size: 4em;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 header .hero .buttons {
   width: 100%;
@@ -191,8 +193,9 @@ main section.content-skills .skills .content-cards .card p {
 }
 main section.content-skills .skills .contentList{
   display: flex;
-  width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 main section.content-skills .skills .contentList .listSkills ul li {
   margin-bottom: 10px;
