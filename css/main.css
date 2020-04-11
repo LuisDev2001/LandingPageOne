@@ -52,10 +52,11 @@ header .hero h2 {
   text-transform: uppercase;
 }
 header .hero .buttons {
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 2em;
 }
 header .hero .buttons a.btn{
@@ -64,11 +65,12 @@ header .hero .buttons a.btn{
   color: #ffffff;
   font-style: normal;
   transition: .25s ease;
+  width: 140px;
+  text-align: center;
 }
 header .hero .buttons a.btn.primary {
   background: linear-gradient(180deg, #FD5D39, #F49565);
   border: 1px solid #FD5D39;
-  margin-right: 10px;
 }
 header .hero .buttons a.btn.secondary {
   border: 1px solid #ffffff;
@@ -146,6 +148,7 @@ main section.content-skills .skills .content-cards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: .5em;
   margin: 4em 0;
 }
@@ -161,11 +164,7 @@ main section.content-skills .skills .content-cards .card {
   padding: 2.5em 0;
   box-shadow: 0 10px 15px rgba(0,0,0,.2);
   text-align: center;
-  margin-right: 5px;
   position: relative;
-}
-main section.content-skills .skills .content-cards .card:last-child{
-  margin-right: 0;
 }
 main section.content-skills .skills .content-cards .card .iconCard {
   width: 80px;
